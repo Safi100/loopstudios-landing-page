@@ -3,13 +3,13 @@
   visibility: visible;
 }
 
-.header__top__menu.show_menu span:nth-child(1) {
+.header__menu.show_menu span:nth-child(1) {
   transform: rotate(45deg);
 }
-.header__top__menu.show_menu span:nth-child(2) {
+.header__menu.show_menu span:nth-child(2) {
   opacity: 0;
 }
-.header__top__menu.show_menu span:nth-child(3) {
+.header__menu.show_menu span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
