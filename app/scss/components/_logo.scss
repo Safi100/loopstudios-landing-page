@@ -1,0 +1,8 @@
+.logo{
+    z-index:3;
+    display: flex;
+    justify-content: center;
+    & > * {
+        height: 2.7rem;
+    }
+}

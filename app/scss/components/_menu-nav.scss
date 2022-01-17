@@ -1,0 +1,43 @@
+
+.header__navbar{
+        font-family:$Josefin-font;
+        text-transform: uppercase;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:$Black;
+        padding-left: 2rem;
+        opacity: 0;
+        visibility: hidden;
+        flex-direction:column;
+        justify-content:center;
+        font-size: 3rem;
+        transition: all .3s ease;
+        &__list:not(:last-child){margin-bottom: 2.2rem;}
+}
+
+@media (min-width:850px) {
+.header{
+        &__top{padding-top: 6rem;}
+        &__menu{display: none;}
+        &__navbar{
+                font-size: 2rem;
+                flex-direction: row;
+                position: unset;
+                width: unset;
+                opacity: 1;
+                visibility: visible;
+                background: transparent;
+                font-family: $Alata-font;
+                text-transform: unset;
+                padding: 0;
+        &__list:not(:last-child){
+                margin-bottom: 0;
+                margin-right: 3rem;
+                }
+        }    
+        }
+}

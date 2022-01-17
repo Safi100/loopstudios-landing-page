@@ -1,0 +1,18 @@
+.grid{
+    display: grid;
+    @include breakpoints-up(medium){
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoints-down(small){
+        gap: 3rem;
+    }
+    @include breakpoints-up(large){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 43rem 43rem  43rem;
+    }
+    @include breakpoints-up(x-large){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 43rem 43rem;
+    }
+}

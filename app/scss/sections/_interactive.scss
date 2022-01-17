@@ -1,0 +1,54 @@
+.interactive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:9.6rem 0;
+    margin: 0 auto;
+    &__img{
+        margin-bottom: 4rem;
+        & > * {
+            width:100%;
+        }
+    }
+    &__info{
+        text-align: center;
+        h2{
+            font-size: 3rem;
+            margin-bottom: 2.4rem;
+        }
+        p{
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            color:$Dark-Gray;
+        }
+    }
+}
+
+@include breakpoints-up(x-large){
+    .interactive{
+        .row{display:flex;}
+        &__img{
+            margin-bottom:0;
+            width: 100%;
+            & > * {
+                height: 100%;
+            }
+        }
+        &__info{
+            align-self: flex-end;
+            width: 75rem;
+            padding: 8.4rem 0 0rem 5.4rem;
+            text-align: left;
+            margin-left: -14rem;
+            background: white;
+            h2{
+                font-size: 4.2rem;
+            }
+            p{
+                width:100%;
+                text-align: left;
+            }
+        }
+    }
+}

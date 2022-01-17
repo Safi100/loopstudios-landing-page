@@ -1,0 +1,53 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size: $font-size;
+    font-family:$Josefin-font;
+    font-family:$Alata-font;
+}
+h1, h2, span, h3, .creations__button{
+    text-transform: uppercase;
+    font-family:$Josefin-font;
+    font-weight: 100;
+    
+}
+li{
+    list-style: none;
+    width: max-content;
+    color:$White;
+    display: block;
+    position:relative;
+    &::after{
+        content:'';
+        position:absolute;
+        margin:0 auto;
+        width: 0%;
+        height: 3px;
+        background:$White;
+        border-radius: 2px;
+        bottom: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.5s;
+    }
+    &:hover::after{
+        width: 50%;    
+    }
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.row{
+    max-width:102.4rem;
+    width: 90%;
+    margin: 0 auto;
+}

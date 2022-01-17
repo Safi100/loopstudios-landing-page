@@ -1,0 +1,15 @@
+{
+  "name": "loopstudios-landing-page-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass app/scss/main.scss app/css/main.css -w"
+  },
+  "keywords": [],
+  "author": "Safi Nafi",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.47.0"
+  }
+}
